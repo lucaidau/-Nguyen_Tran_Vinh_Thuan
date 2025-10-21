@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Cây Xanh</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cafe Cây Xanh</h1>
+    <nav>
+      <ul>
+        <li><a href="#gioithieu">Giới thiệu</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Hình ảnh</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Đổi id từ about thành gioithieu -->
+  <section id="gioithieu">
+    <h2>Về Chúng Tôi</h2>
+    <p>Chào mừng bạn đến với <strong>Cafe Cây Xanh</strong> – nơi hội tụ của hương vị cà phê nguyên chất và không gian thư giãn tuyệt vời. Chúng tôi tự hào mang đến trải nghiệm cà phê chân thật, đậm đà và tinh tế giữa thiên nhiên trong lành.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li>Cà phê đen truyền thống – 25.000đ</li>
+      <li>Cà phê sữa đá – 30.000đ</li>
+      <li>Latte – 40.000đ</li>
+      <li>Capuchino – 40.000đ</li>
+      <li>Trà đào – 35.000đ</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Hình Ảnh</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Cà phê sữa">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Không gian bên trong quán">
+      <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Khu vườn quán cà phê">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Liên hệ</h2>
+    <p>📍 Địa chỉ: 15 Hecta, xã Phan Rí Cửa, Lâm Đồng</p>
+    <p>📞 Điện thoại: 0944 774 050</p>
+    <p>🕒 Giờ mở cửa: 7:00 - 22:00 mỗi ngày</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Cafe Cây Xanh.</p>
+  </footer>
+</body>
+</html>
